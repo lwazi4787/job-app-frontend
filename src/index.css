@@ -5,9 +5,278 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background: #efefef;
+  margin: 0;
+  padding: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.welcome
+{
+  margin-bottom: 4em;
+}
+.j-tracker
+{
+  color: #848f8e;
+  //margin-top: 112em;
+}
+
+.sidebar
+{
+	height: 100vh;
+	//width: 180px;
+  width: 10%;
+	position: fixed;
+  z-index: 500;
+}
+.mySideDropDown
+{
+  margin-bottom: 2em;
+  margin-left: 2em;
+}
+.main-sec
+{
+  margin-top: 3em;
+  //margin-left: 2em;
+  width: 95%;
+  margin: 3em auto;
+}
+
+.authForms
+{
+  width: 30%;
+  margin: 8em auto;
+  background: #fff;
+  padding: 2em;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+}
+
+.myFormInput
+{
+  padding: .2em;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  width: 100%;
+}
+
+.btn-filter
+{
+  border: none;
+  padding: .3em 2em;
+  border-radius: 5pxl
+}
+
+.myContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Make the container take the full viewport height */
+}
+
+.fixed-button {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px; /* Adjust the distance from the right as needed */
+    padding: 10px 20px;
+    //background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 600;
+}
+
+.my-link-card
+{
+  text-decoration: none;
+}
+.u:visited
+{
+  text-decoration: none;
+}
+
+.tableCard
+{
+  padding: 2em;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  background: #fff;
+  //margin-top: 5em;
+  cursor: pointer;
+  margin-bottom: 2em;
+  height: 12em;
+  //width: 10%;
+  //overflow: auto;
+}
+.tableCard2
+{
+  padding: 2em;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  background: #fff;
+  //margin-top: 5em;
+  cursor: pointer;
+  margin-bottom: 2em;
+  //width: 100%;
+  width: 100%;
+  overflow: auto;
+}
+.btn-extn
+{
+  position: fixed;
+  bottom: 48px; /* Adjust the distance from the bottom as needed */
+  right: 22px; /* Adjust the distance from the right as needed */
+  z-index: 700;
+  background: #fff;
+  padding: 20px 20px;
+  cursor: pointer;
+  display: none;
+  //z-index: 700;
+  //margin-bottom: -0px;
+  width: 145px;
+  color: #000;
+}
+
+.fixed-button:hover .btn-extn
+{
+  display: block;
+}
+.text-job
+{
+  color: #848f8e;
+}
+.tableCard .icon
+{
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: green;
+}
+.myOverlay
+{
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, .3);
+  z-index: 1000;
+}
+.myModal
+{
+  margin: 5% auto;
+  background: #efefef;
+  width: 50%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 2em;
+  text-align: left;
+}
+
+.myOverlay .myModal strong
+{
+  float: right;
+  cursor: pointer;
+}
+
+.myOverlay .myModal strong:hover
+{
+  color: #666;
+}
+.nav-pills .tasksSubLinkStyles .my-nav-link.active
+{
+  color: #fff;
+  //background-color: green;
+  border-left: 5px solid green;
+}
+.tasksSubLinkStyles li
+{
+  text-decoration: none;
+  padding: .5em 1em;
+  padding-top: 0px;
+  padding-bottom: 1em;
+  padding-left: 0px;
+}
+.tasksSubLinkStyles li:first-child
+{
+  padding-top: 1em;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: green;
+}
+.btn-success {
+  color: #fff;
+  background-color: green;
+  border-color: green;
+}
+.btn-success:hover {
+  color: #fff;
+  background-color: green;
+  border-color: green;
+}
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: green;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 125, 125, 0.25);
+}
+.taskActive
+{
+  border-left: 5px solid blue;
+}
+.taskComplete
+{
+  border-left: 5px solid green;
+}
+.tasksSubLink li
+{
+  opacity: 0;
+  display: none;
+  transition: opacity 12s ease-in-out;
+}
+.tasksSubLinkStyles 
+{
+  margin-left: 1em;
+  background: #efefef;
+  color: #333;
+  border-radius: 5px;
+  //margin-top: 1em;
+  //padding: 1em;
+  padding-left: 0px;
+  //margin-bottom: 1em;
+  transition: * 12s;
+}
+.my-nav-link
+{
+  text-decoration: none;
+  padding-left: 1.5em;
+}
+
+@media (min-width: 1560px) {
+    .main-sec
+    {
+      margin-top: 3em;
+      margin-left: 120em;
+      //width: 95%;
+      margin: 3em auto;
+    }
+}
+
+@media (min-width: 992px) and (max-width : 1200px){
+
+    .main-sec
+    {
+      margin-top: 3em;
+      margin-left: 120em;
+      //width: 95%;
+      margin: 3em auto;
+    }
 }
